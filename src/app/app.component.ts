@@ -1,4 +1,8 @@
+import { strictEqual } from 'assert';
+import { SuiteNumberingProcessor } from 'jasmine-spec-reporter/built/processors/suite-numbering-processor';
 import { Component } from '@angular/core';
+
+import { Hero } from './hero';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Tour of Heroes';
+
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+  };
 }
