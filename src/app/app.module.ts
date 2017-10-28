@@ -1,3 +1,5 @@
+import { routing } from './app.routing';
+import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './hero.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -9,11 +11,13 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    routing,
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
