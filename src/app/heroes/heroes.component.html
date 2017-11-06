@@ -1,5 +1,4 @@
 <div style="text-align:center">
-  <h1>Welcome to {{title}}!</h1>
 
   <h2>My Heroes</h2>
   <ul class="heroes">
@@ -8,6 +7,11 @@
     </li>
   </ul>
 
-  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  <div *ngIf="selectedHero">
+    <h2>
+      {{selectedHero.name | uppercase}} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
 
 </div>
