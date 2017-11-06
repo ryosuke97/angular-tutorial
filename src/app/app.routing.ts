@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/dashbord',
+        redirectTo: '/dashboard',
         pathMatch: 'full'
     },
     {
