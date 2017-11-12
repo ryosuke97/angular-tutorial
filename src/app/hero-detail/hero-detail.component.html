@@ -1,3 +1,11 @@
-<p>
-  hero-detail works!
-</p>
+<!-- ヒーロー詳細コンポーネント -->
+<div *ngIf="hero" class="txt-center">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}
+  </div>
+  <div>
+    <label>name: </label>
+    <input type="text" [(ngModel)]="hero.name">
+  </div>
+</div>

@@ -7,13 +7,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero" class="txt-center">
-  <h2>{{selectedHero.name}} details!</h2>
-  <div>
-    <label>id: </label>{{selectedHero.id}}
-  </div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="selectedHero.name">
-  </div>
-</div>
+<app-hero-detail [hero]="selectedHero"><app-hero-detail>>
