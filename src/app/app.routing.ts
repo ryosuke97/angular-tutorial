@@ -9,3 +9,5 @@ const appRoute: Routes = [
         component: HeroesComponent
     }
 ];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoute);

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroService } from './hero.service';
 import { HeroesComponent } from './heroes/heroes.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HeroesComponent } from './heroes/heroes.component';
   imports: [
     BrowserModule,
     FormsModule,
+    routing,
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
