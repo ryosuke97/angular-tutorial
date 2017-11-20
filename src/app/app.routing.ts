@@ -1,3 +1,4 @@
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -17,6 +18,10 @@ const appRoute: Routes = [
         path: '',
         redirectTo: '/dashboard',
         pathMatch: 'full'
+    },
+    {
+        path: 'detail/:id',
+        component: HeroDetailComponent
     },
 ];
 
